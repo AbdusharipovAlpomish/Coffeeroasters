@@ -1,0 +1,166 @@
+.work {
+  padding: 100px 0;
+}
+
+.work_block {
+  max-width: 1045px;
+  width: 100%;
+  margin-left: 85px;
+}
+
+.work_title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: $color5;
+  margin-bottom: 80px;
+}
+
+.work_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work_list__bonker {
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.work_list__bonker::before {
+  @include line;
+  margin-bottom: 82px;
+  margin-left: 15.5px;
+}
+
+.work_item {
+  max-width: 285px;
+  color: $color2;
+
+  &::before {
+    @include radius;
+    position: absolute;
+    top: -15.5px;
+  }
+}
+
+.work_span {
+  @include namber;
+  margin-bottom: 38px;
+}
+
+.work_inner__title {
+  max-width: 255px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 43px;
+}
+
+.work_text {
+  max-width: 285px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.work_btn {
+  @include btn;
+}
+
+@media screen and (max-width: 1160px) {
+  .work {
+    padding: 72px 0;
+  }
+
+  .work_block {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work_title {
+    margin-bottom: 40px;
+  }
+
+  .work_list__bonker {
+    margin-bottom: 44px;
+  }
+
+  .work_list__bonker::before {
+    max-width: 467px;
+  }
+
+  .work_span {
+    margin-bottom: 32px;
+  }
+
+  .work_inner__title {
+    max-width: 223px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 38px;
+  }
+
+  .work_text {
+    max-width: 211px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .work_list__bonker::before {
+    max-width: 580px;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .work {
+    padding: 60px 0;
+  }
+
+  .work_title {
+    margin-bottom: 80px;
+  }
+
+  .work_list__bonker {
+    margin-bottom: 79px;
+  }
+
+  .work_list__bonker::before {
+    display: none;
+  }
+
+  .work_list {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .work_item {
+    max-width: 327px;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .work_span {
+    margin-bottom: 24px;
+  }
+
+  .work_inner__title {
+    max-width: 327px;
+    margin-bottom: 24px;
+  }
+
+  .work_text {
+    max-width: 327px;
+    margin-bottom: 0;
+  }
+
+  .work_btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

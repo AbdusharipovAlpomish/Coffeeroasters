@@ -1,0 +1,72 @@
+@mixin btn {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 25px;
+  background-color: $color1;
+  padding: 16px 36px;
+
+  &:active {
+    background-color: $color15;;
+  }
+}
+
+@mixin collection($url) {
+  content: "";
+  max-width: 255px;
+  width: 100%;
+  height: 193px;
+  display: inline-block;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 72px;
+}
+
+@mixin services_card($url) {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 71px;
+}
+
+@mixin radius {
+  content: "";
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid $color1;
+  background-color: $color4;
+  display: inline-block;
+}
+
+@mixin line {
+  content: "";
+  max-width: 760px;
+  width: 100%;
+  height: 2px;
+  display: inline-block;
+  background-color: $color3;
+}
+
+@mixin namber {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $color3;
+  display: inline-block;
+}
+
+@mixin network($url) {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url($url);
+}

@@ -1,0 +1,116 @@
+.hero {
+  padding: 57px 0 61.5px 0;
+}
+
+.hero_container {
+  width: 100%;
+  padding: 117px 0 116px 85px;
+  border-radius: 10px;
+  background-image: url('../../images/hero_beckground.png');
+  background-position: left 40px bottom -167px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero_container::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: $color9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero_title {
+  max-width: 493px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: $color4;
+  margin-bottom: 32px;
+}
+
+.hero_text {
+  max-width: 417px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color4;
+  opacity: 80%;
+  margin-bottom: 56px;
+}
+
+.hero_btn {
+  @include btn;
+}
+
+@media screen and (max-width: 1085px) {
+  .hero {
+    padding: 53px 0 72px 0;
+  }
+
+  .hero_container {
+    padding: 104px 0 104px 58px;
+    background-size: 1284px 854px;
+    background-position: left 78px bottom 23px;
+  }
+
+  .hero_title {
+    max-width: 329px;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+
+  .hero_text {
+    max-width: 372px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_container {
+    text-align: center;
+    background-size: 1284px;
+    background-repeat: no-repeat;
+    background-position: right -470px top -332px;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero_title,
+  .hero_text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .hero_container {
+    padding: 100px 0 99px 0;
+    background-position: right -595px top -354px;
+    z-index: 1;
+
+    &::before {
+      background-color: $color16;
+      z-index: -1;
+    }
+  }
+
+  .hero_title {
+    max-width: 279px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero_text {
+    max-width: 279px;
+    margin-bottom: 39px;
+  }
+}
