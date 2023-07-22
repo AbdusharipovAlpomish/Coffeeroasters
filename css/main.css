@@ -1224,7 +1224,7 @@ button {
 
 .main_footer__container {
   background-color: #2C343E;
-  padding: 47px 0;
+  padding: 47px 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1680,7 +1680,7 @@ button {
 
 .create_text {
   max-width: 445px;
-  font-weight: 16px;
+  font-weight: 400;
   line-height: 26px;
   opacity: 80%;
 }
@@ -2150,5 +2150,332 @@ button {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 24px;
+  }
+}
+.drink_coffee {
+  padding: 84px 0;
+}
+
+.menu_coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu_coffee__list {
+  max-width: 255px;
+  width: 100%;
+}
+
+.menu_coffee__item {
+  width: 100%;
+}
+.menu_coffee__item:nth-child(1) .menu_coffee__link::before {
+  content: "01";
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 24.5px;
+  color: #83888F;
+}
+.menu_coffee__item:nth-child(2) .menu_coffee__link::before {
+  content: "02";
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 24.5px;
+  color: #83888F;
+}
+.menu_coffee__item:nth-child(3) .menu_coffee__link::before {
+  content: "03";
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 24.5px;
+  color: #83888F;
+}
+.menu_coffee__item:nth-child(4) .menu_coffee__link::before {
+  content: "04";
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 24.5px;
+  color: #83888F;
+}
+.menu_coffee__item:nth-child(5) .menu_coffee__link::before {
+  content: "05";
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-right: 24.5px;
+  color: #83888F;
+}
+.menu_coffee__item:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #83888F;
+  display: inline-block;
+  margin: 24px 0;
+  opacity: 25%;
+}
+
+.menu_coffee__link {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  opacity: 40%;
+}
+.menu_coffee__link:hover {
+  opacity: 1;
+}
+
+.menu_coffee__item .menu_coffee__link:hover::before {
+  color: #0E8784;
+}
+
+.drink_coffee__box {
+  max-width: 730px;
+  width: 100%;
+}
+
+.drink_coffee__list {
+  width: 100%;
+}
+
+.drink_coffee__item {
+  margin-bottom: 88px;
+}
+
+.drink_coffee__item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+  margin-bottom: 56px;
+  cursor: pointer;
+}
+
+.drink_coffee__box .drink_coffee__item label::after {
+  content: "\f107";
+  font-family: "icomoon";
+}
+
+.drink_coffee__box .drink_coffee__item.active label::after {
+  content: "\f106";
+  font-family: "icomoon";
+}
+
+.drink_coffee__item input[type=radio] {
+  display: none;
+}
+
+.drink_coffee__list-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.drink_coffee__item-inner {
+  max-width: 228px;
+  padding: 32px 28px 84px 28px;
+  background-color: #F4F1EB;
+  border-radius: 8px;
+  color: #333D4B;
+}
+.drink_coffee__item-inner:hover {
+  background-color: #FDD6BA;
+}
+.drink_coffee__item-inner:active {
+  background-color: #0E8784;
+  color: #FFFFFF;
+}
+
+.drink_coffee__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+
+.drink_coffee__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.drink_coffee__content-summary {
+  max-width: 730px;
+  padding: 47px 64px;
+  background-color: #293039;
+  border-radius: 10px;
+}
+
+.summary {
+  margin-bottom: 40px;
+}
+
+.summary_title {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+
+.summary_text {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.summary_span {
+  color: #0E8784;
+}
+
+.drink_coffee__btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.drink_coffee__btn {
+  padding: 16px 36px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: #E2DEDB;
+  border-radius: 6px;
+}
+
+.drink_coffee__btn:active {
+  background-color: #66D2CF;
+}
+
+.drink_coffee__list .drink_coffee__item .drink_coffee__list-inner {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
+  overflow-y: auto;
+}
+
+.drink_coffee__list .drink_coffee__item.active .drink_coffee__list-inner {
+  max-height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .drink_coffee {
+    padding: 72px 0;
+  }
+  .menu_coffee__list {
+    display: none;
+  }
+  .drink_coffee__item:not(:last-child) {
+    margin-bottom: 144px;
+  }
+  .drink_coffee__item:last-child {
+    margin-bottom: 144px;
+  }
+  .menu_coffee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .drink_coffee__item label {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .drink_coffee__item-inner {
+    max-width: 223px;
+    padding-left: 25px;
+    padding-right: 26px;
+  }
+  .drink_coffee__content-summary {
+    padding: 27px 43px 27px 44px;
+  }
+  .drink_coffee__btn-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .drink_coffee__btn {
+    background-color: #0E8784;
+  }
+}
+@media screen and (max-width: 750px) {
+  .drink_coffee {
+    padding: 60px 0;
+  }
+  .drink_coffee__item:not(:last-child) {
+    margin-bottom: 96px;
+  }
+  .drink_coffee__item:last-child {
+    margin-bottom: 120px;
+  }
+  .drink_coffee__list {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .drink_coffee__item label {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 42px;
+  }
+  .drink_coffee__content-summary {
+    padding: 32px 24px 32px 25px;
+    margin-bottom: 56px;
+  }
+  .drink_coffee__list-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    gap: 16px;
+  }
+  .drink_coffee__item-inner {
+    max-width: 100%;
+    width: 100%;
+    padding: 24px 25px 24px 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .drink_coffee__title {
+    margin-bottom: 8px;
   }
 }/*# sourceMappingURL=main.css.map */
